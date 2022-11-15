@@ -116,7 +116,7 @@ header .fa-bars {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(../image/bahan\ kue.jpeg) no-repeat;
+    background: url(/Images/bahan\ kue.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 17rem;
