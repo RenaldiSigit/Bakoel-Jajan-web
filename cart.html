@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+        <div class="title flex items-center flex-row">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="currentColor" d="M48 256c0 114.87 93.13 208 208 208s208-93.13 208-208S370.87 48 256 48S48 141.13 48 256Zm212.65-91.36a16 16 0 0 1 .09 22.63L208.42 240H342a16 16 0 0 1 0 32H208.42l52.32 52.73A16 16 0 1 1 238 347.27l-79.39-80a16 16 0 0 1 0-22.54l79.39-80a16 16 0 0 1 22.65-.09Z"/></svg>
+            <h1>Keranjang</h1>
+        </div>
+    </a>
+    </nav>
+    <div class="container">
+        <h1 class="title-card">Shopping Cart</h1>
+        <div class="card-box">
+            <div class="card-row flex flex-row">
+                <div class="image">
+                    <img src="./Images/kue bulan sabit.jpg" alt="kopi merapi">
+                </div>
+             <div class="row-title flex flex-row space-between">
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Nama Produk</div>
+                    <div class="product">Kue Kering</div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Quantity</div>
+                    <div class="product"><input type="number" name="quantity" id="quantity"></div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Harga</div>
+                    <div class="product">Rp. 5000</div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Total</div>
+                    <div class="product">Rp. 5000</div>
+                </div>
+             </div>
+            </div>
+            <div class="card-row flex flex-row">
+                <div class="image">
+                    <img src="./Images/kue nona manis.jpeg" alt="kopi merapi">
+                </div>
+             <div class="row-title flex flex-row space-between">
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Nama Produk</div>
+                    <div class="product">KKue Nona manis</div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Quantity</div>
+                    <div class="product"><input type="number" name="quantity" id="quantity"></div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Harga</div>
+                    <div class="product">Rp. 5000</div>
+                </div>
+                <div class="box-title flex flex-col justify-center items-center">
+                    <div class="title">Total</div>
+                    <div class="product">Rp. 5000</div>
+                </div>
+             </div>
+            </div>
+        </div>
+        <div class="container-total">
+        <div class="total flex flex-row items-center">
+            <div class="order">Order Total:</div>
+            <div class="total-cart">Rp 115.000</div>
+        </div>
+    </div>
+    <div class="button flex flex-row flex-end">
+        <a class="flex justify-center items-center" href="#">Checkout</a>
+    </div>
+    </div>
+    <script>
+        const quantity = document.querySelector("input#quantity")
+        quantity.addEventListener("change",(e)=>{
+            if (e.target.value <= 0 ) {
+                alert("minus is tidak boleh")
+                e.target.value = 0
+            }
+        })
+    </script>
+</body>
+</html>
